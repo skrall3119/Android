@@ -1,4 +1,6 @@
 //VARIABLES: number, Integer; numberName, String;
+//PLAN: get user to input a number 1-10, and based on input will result in corresponding value.
+// if the value is invalid, it will tell them to re enter a new value with the given criteria.
 
 package CourseWork;
 import java.util.Scanner;
