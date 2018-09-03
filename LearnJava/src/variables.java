@@ -1,7 +1,8 @@
 
+
 public class variables {
-	static void main() {
-		int var1 = 2;
+	public static void main(String[] args) {
+		int var1 = 72;
 		short var2 = 1;
 		byte var3 = 0;
 		long var4 = 1000000000;
