@@ -1,4 +1,8 @@
-// VARIABLES: input, Int; option1, String; option2, String; option3, String; option4, String; option5, String;
+// VARIABLES: input, integer; option1, String; option2, String; option3, String; option4, String; option5, String;
+// PLAN: Instantiate the Variables, Display some text to the screen, Display choices, ask for input.
+// if the selection is out of bounds, user will constantly be asked for new input and given the choices again
+// until a valid input is given.
+// after given valid input, the choice will then be displayed to the console. 
 package CourseWork;
 import java.util.Scanner;
 
