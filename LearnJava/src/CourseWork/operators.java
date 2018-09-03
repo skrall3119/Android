@@ -1,3 +1,4 @@
+package CourseWork;
 //plan: perform basic mathematical functions using +, -, *, /, and %, and displsy them via console.
 public class operators {
 	public static void main(String args[]) {

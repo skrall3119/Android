@@ -1,3 +1,4 @@
+package CourseWork;
 // VARIABLES: temperature, String; input, Double; 
 // PLAN: if temperature is less than 97.5, temperature is low.
 // if temperature is between 97.5 and 99.5, temperature is normal.

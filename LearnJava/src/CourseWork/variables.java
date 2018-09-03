@@ -1,3 +1,4 @@
+package CourseWork;
 
 
 public class variables {
