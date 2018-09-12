@@ -34,12 +34,14 @@ public class Overload {
 			System.out.print("Please enter a phone number: ");
 			number = scanner.nextLine();
 			printInfo(name, number, businessName);
+			break;
 		case "resident":
 			System.out.print("Please enter your name: ");
 			name = scanner.nextLine();
 			System.out.print("Please enter a phone number: ");
 			number = scanner.nextLine();
 			printInfo(name, number);
+			break;
 		}
 		scanner.close();
 	}
