@@ -3,7 +3,7 @@
 // if the selection is out of bounds, user will constantly be asked for new input and given the choices again
 // until a valid input is given.
 // after given valid input, the choice will then be displayed to the console. 
-package CourseWork;
+package courseWork;
 import java.util.Scanner;
 
 public class Looping {

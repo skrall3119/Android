@@ -5,4 +5,4 @@
  * @author alex
  *
  */
-package CourseWork;
+package courseWork;

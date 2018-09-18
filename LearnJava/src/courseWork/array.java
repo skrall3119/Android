@@ -1,4 +1,4 @@
-package CourseWork;
+package courseWork;
 
 public class array {
 
