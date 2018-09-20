@@ -1,3 +1,13 @@
+/* Variables:
+ * - todaysDate, LocalDateTime: Gets current date.
+ * - dtf, DateTimeFormatter: formats times nicely.
+ * - lastFullMoon, LocalDateTime: date of the last full moon.
+ * - nextFullMoon, LocalDateTime: date of the next full moon.
+ * Process:
+ * - Print Current day.
+ * - Print next day of full moon.
+ */
+
 package courseWork;
 
 import java.time.*;
