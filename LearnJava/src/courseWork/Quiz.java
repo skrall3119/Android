@@ -2,6 +2,19 @@ package courseWork;
 
 import java.util.Scanner;
 
+/*
+ * Variables:
+ * - answer, String: Gets user input
+ * - total, int: Total questions answered correctly
+ * - questions, String[]: Array of questions
+ * - answers, String[]: array of answers.
+ * 
+ * Process:
+ * - Loop through the questions array
+ * - get user to enter their answer
+ * - add 1 to total if correct
+ */
+
 public class Quiz {
 
 	public static void main(String[] args) {
