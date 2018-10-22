@@ -2,12 +2,12 @@
 package courseWork;
 
 
-      	import java.time.*;
+        import java.time.*;
         import java.time.format.DateTimeFormatter;
         import java.time.temporal.ChronoUnit;
         import java.util.Scanner;
 
-public class Main {
+public class birthday {
 
 
     public static void main(String[] args) {

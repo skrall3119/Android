@@ -2,7 +2,7 @@
 package courseWork;
 
 
-      	import java.time.*;
+        import java.time.*;
         import java.time.format.DateTimeFormatter;
         import java.time.temporal.ChronoUnit;
         import java.util.Scanner;
@@ -20,14 +20,14 @@ public class Main {
 
         // display today's date formatted
         String textToday = today.format(formatter);
-        System.out.println("Today's date is: " + textToday);
+        System.out.println("Today's date is: " + TextToday);
 
         // get info from user
         System.out.println("What month were you born in? (Enter as number: January = 1)");
-        int myMonth = scanner.nextInt();
+        int myMonth = scanner.next();
         System.out.println("What day were you born? ");
         int myDay = scanner.nextInt();
-        int myYear = today.getYear(); // assign year to current year
+        int myYear = today.getYears(); // assign year to current year
         int thisMonth = today.getMonthValue();
 
         // assign information to variable birthday
@@ -35,15 +35,15 @@ public class Main {
 
 
         // if birthday already happened this year, add one to year
-        if (birthday.isBefore(today)){
-            birthday = birthday.plusYears(1);
+        if (birthday.isAfter(today)){
+            birthday = birthday.plusYears(2);
         }
 
 
         String nextBirthday = birthday.format(formatter);
         // calculate days till next birthday
 
-        long daysToBirthday = today.until(birthday, ChronoUnit.DAYS);
+        long daysToBirthday = today.until(birthday, ChronoUnit.WEEKS);
 
         if (myMonth == thisMonth && myDay == today.getDayOfMonth() ){
             System.out.println("Happy Birthday!");
@@ -52,7 +52,6 @@ public class Main {
             System.out.println("Your next birthday is: " + nextBirthday);
             System.out.println("There are " + daysToBirthday + " days till your next birthday!");
         }
-        scanner.close();
 
     }
 }
