@@ -3,7 +3,6 @@ package courseWork;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import org.omg.CORBA.PUBLIC_MEMBER;
 
 public class CustomerException {
 
@@ -11,36 +10,43 @@ public class CustomerException {
 		
 		Scanner scanner = new Scanner(System.in);
 		
-		String name;
-		String address;
-		String number;
-		String propertyName;
-		int numberOfProperties;
-		double sqft;
+		String name = "";
+		String address = "";
+		String number = "";
+		String propertyName = "";
+		int numberOfProperties = 0;
+		double sqft = 0;
 		boolean isSenior;
-		int userChoice;
+		int userChoice = 0;
+		boolean valid = false;
 		
-		displayMenu();
-		userChoice = scanner.nextInt();
-		while (userChoice != 1 && userChoice != 2 && userChoice != 3) {
+		do {
 			try {
 				displayMenu();
 				userChoice = scanner.nextInt();
+				valid = true;
 			} catch (InputMismatchException e) {
 				System.out.println("You have entered an invalid type. Please enter 1,2, or 3.");
 				scanner.next();
+			} 
+		} while (valid == false);
+		valid = false;
+		do {
+			try {
+				scanner.nextLine();
+				System.out.println("Please enter your name: ");
+				name = scanner.nextLine();
+				System.out.println("Please enter your address: ");
+				address = scanner.nextLine();
+				System.out.println("Please enter your phone number: ");
+				number = scanner.nextLine();
+				System.out.println("please enter the square footage of your property: ");
+				sqft = scanner.nextDouble();
+				valid = true;
+			} catch (InputMismatchException e) {
+				System.out.println("You have entered invalid data. please try again.");
 			}
-		}
-		scanner.nextLine();
-		System.out.println("Please enter your name: ");
-		name = scanner.nextLine();
-		System.out.println("Please enter your address: ");
-		address = scanner.nextLine();
-		System.out.println("Please enter your phone number: ");
-		number = scanner.nextLine();
-		System.out.println("please enter the square footage of your property: ");
-		sqft = scanner.nextDouble();
-		
+		} while (valid == false);
 		
 		if (userChoice == 1) {
 			
