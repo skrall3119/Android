@@ -9,6 +9,15 @@ public class Commercial extends Customer {
 	String propertyName;
 	int numberOfProperties;
 
+	/**
+	 *  Commercial Class
+	 * @param name
+	 * @param number
+	 * @param address
+	 * @param sqft
+	 * @param propertyName
+	 * @param numberOfProperties
+	 */
 	public Commercial(String name, String number, String address, double sqft, String propertyName, int numberOfProperties) {
 		super(name, number, address, sqft);
 		
@@ -16,7 +25,9 @@ public class Commercial extends Customer {
 		this.propertyName = propertyName;
 		
 	}
-	
+	/**
+	 * Calculates and displays the the bill based on userdata.
+	 */
 	public void calculateCharges() {
 		
 		NumberFormat formatter = NumberFormat.getCurrencyInstance();

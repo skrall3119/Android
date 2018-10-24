@@ -1,5 +1,10 @@
 package courseWork;
 
+/**
+ * Customer Superclass.
+ * @author alex
+ *
+ */
 public class Customer {
 	
 	String customerName;
@@ -7,6 +12,13 @@ public class Customer {
 	String customerAddress;
 	double squareFootage;
 	
+	/**
+	 * Constructor
+	 * @param name
+	 * @param number
+	 * @param address
+	 * @param sqft
+	 */
 	public Customer(String name, String number, String address, double sqft){
 		this.customerName = name;
 		this.customerPhone = number;

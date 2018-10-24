@@ -2,20 +2,35 @@ package courseWork;
 
 import java.text.NumberFormat;
 
+/**
+ * 
+ * @author Alex
+ * Residential Class
+ */
+
 public class Residential extends Customer {
 	
 	double rate = 6;
 	double discount = 0;
 	boolean isSenior;
 	
-
+/**
+ * Constructor method
+ * @param name
+ * @param number
+ * @param address
+ * @param sqft
+ * @param isSenior
+ */
 	public Residential(String name, String number, String address, double sqft, boolean isSenior) {
 		super(name, number, address, sqft);
 		
 		this.isSenior = isSenior;
 		
 	}
-	
+	/**
+	 * Calculates and displays the bill based on userdata.
+	 */
 	public void calculateCharges() {
 		
 		NumberFormat formatter = NumberFormat.getCurrencyInstance();

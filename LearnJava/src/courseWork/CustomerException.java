@@ -3,9 +3,21 @@ package courseWork;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-
+/**
+ * 
+ * @author alex
+ * This is the CustomerExceprtion class. It is a rework of the original CustomerMain class.
+ * Now this class is going to include exception handling, and also JavaDoc documentation.
+ *
+ */
 public class CustomerException {
 
+	/**
+	 * 
+	 * @param args
+	 * Main method.
+	 * Grabs data from the user, then creates an object based on the data.
+	 */
 	public static void main(String[] args) {
 		
 		Scanner scanner = new Scanner(System.in);
